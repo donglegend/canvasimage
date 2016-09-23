@@ -10,69 +10,43 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="grey" />
     <meta name="format-detection" content="telephone=no;address=no;email=no" />
     <title>canvas image</title>
-    <style>
-    	.files{
-    		position: relative;
-    		margin: 15px 0;
-    	}
-    	.files input{
-			position: absolute;
-			left: 0; top: 0;
-			width: 98px;
-			height: 38px;
-			opacity: 0;
-			background: transparent;
-    	}
-		.files button{
-			padding: 5px 15px;
-			margin-right: 30px;
-			background: #ccc;
-			outline: none;
-			color: #000;
-			font-size: 16px;
-		}
-		select{
-			width: 100px;
-			line-height: 38px;
-			border: 2px #ccc solid;
-		}
-		canvas{
-			width: 100%;
-			display: none;
-		}
-		img{
-			width: 100%;
-		}
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-	<div class="files">
-		<input type="file" id="fileImg">
-		<button>上传图片</button>
-		<a id="download" href="image/dong.jpg" download="dong">
-			<button>下载图片</button>
-		</a>
-		<select name="" id="effects">
-			<option value="self">无效果</option>
-			<option value="gray">灰度</option>
-			<option value="old">复古</option>
-			<option value="black">黑白</option>
-			<option value="negatives">反色(底片效果)</option>
-			<option value="cameo">浮雕</option>
-			<option value="comic">小人书</option>
-			<option value="casting">熔浆</option>
-			<option value="spread">毛玻璃</option>
-			<option value="gauss">高斯模糊</option>
-		</select>
-	</div>
-	<div class="img"></div>
+    <div class="load1" id="loading">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+    </div>
+
+    <div class="files">
+        <input type="file" id="fileImg">
+        <button>上传图片</button>
+        <a id="download" href="image/dong.jpg" download="dong">
+            <button>下载图片</button>
+        </a>
+        <select name="" id="effects">
+            <option value="self">无效果</option>
+            <option value="gray">灰度</option>
+            <option value="old">复古</option>
+            <option value="black">黑白</option>
+            <option value="negatives">反色(底片效果)</option>
+            <option value="cameo">浮雕</option>
+            <option value="comic">小人书</option>
+            <option value="casting">熔浆</option>
+            <option value="spread">毛玻璃</option>
+            <option value="gauss">高斯模糊</option>
+        </select>
+    </div>
+    <div class="img"></div>
     <canvas id="legend"></canvas>
     <script type="text/javascript" src="http://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
     <script type="text/javascript" src="js/effects.js"></script>
     <script type="text/javascript" src="js/canvas.js"></script>
     <script type="text/javascript">
-    	
     </script>
 </body>
 
