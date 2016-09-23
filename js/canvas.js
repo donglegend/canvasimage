@@ -10,7 +10,7 @@ var p = 6; //边缘留白
 
 
 function init(){
-	loadImg("image/dong.jpg");
+	loadImg("../image/dong.jpg");
 }
 
 /**
